@@ -447,6 +447,10 @@ html {
   display: none;
 }
 
+.window-prize {
+  background-image: url("../img/bg_prize.png");
+}
+
 .info-prize {
   display: flex;
   justify-content: center;
@@ -468,7 +472,7 @@ html {
 }
 
 .prizes {
-  height: 580px;
+  height: 600px;
   overflow: auto;
 }
 .prizes .prizes-line {
