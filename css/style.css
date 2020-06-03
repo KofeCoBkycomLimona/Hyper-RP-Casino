@@ -42,7 +42,7 @@ html {
   max-width: 1800px;
   width: 100%;
   margin: auto;
-  padding: 0 15px;
+  padding: 15px 15px;
 }
 
 .info {
@@ -103,7 +103,11 @@ html {
   margin-left: 60px;
   padding-top: 28px;
 }
-.window .window-header .header-list li a:hover, .window .window-header .header-list li a.active {
+.window .window-header .header-list li a:hover {
+  border-top: 4px solid #FFE048;
+  opacity: 1;
+}
+.window .window-header .header-list li a.active {
   border-top: 4px solid #FFE048;
   opacity: 1;
 }
@@ -238,8 +242,8 @@ html {
   padding-left: 85px;
   padding-right: 30px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .window .window-content .swap-money .swap-money__item:focus {
   border: 2px solid #C0E1FF;
@@ -569,13 +573,61 @@ html {
     padding-left: 10px;
   }
 }
-@media (max-width: 1280px) and (max-height: 1024px) {
+@media (max-width: 1366px) and (max-height: 768px) {
+  .container {
+    max-height: 768px;
+    height: 100%;
+  }
+
   .window {
-    height: 740px;
+    height: 650px;
+  }
+
+  .prizes {
+    max-height: 442px;
+  }
+}
+@media (max-width: 1280px) and (max-height: 720px) {
+  .window {
+    height: 620px;
+  }
+
+  .prizes {
+    max-height: 400px;
   }
 
   .wrapper .img {
     background-size: cover;
+  }
+
+  .window-info {
+    margin-top: 50px;
+  }
+  .window-info .info-content_roulette .roulette-img {
+    margin-left: 60px;
+    margin-right: 20px;
+  }
+  .window-info .info-content_roulette .roulette-img img {
+    width: 400px;
+    height: 300px;
+  }
+  .window-info .info-content_roulette .roulette-text {
+    height: 210px;
+    margin-top: -10px;
+    margin-right: 40px;
+  }
+  .window-info .info-content_roulette .roulette-text h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .window-info .info-content_roulette .roulette-text hr {
+    margin-bottom: 12px;
+  }
+  .window-info .info-content_roulette .roulette-text p {
+    height: 240px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1.2px;
   }
 }
 @media (max-width: 1024px) and (max-height: 768px) {
@@ -717,7 +769,10 @@ html {
     letter-spacing: 1.4px;
     padding-top: 10px;
   }
-  .window .window-header .header-list li a:hover, .window .window-header .header-list li a.active {
+  .window .window-header .header-list li a:hover {
+    border-top: 3px solid #FFE048;
+  }
+  .window .window-header .header-list li a.active {
     border-top: 3px solid #FFE048;
   }
   .window .window-header .header-lock {
